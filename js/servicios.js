@@ -124,23 +124,23 @@ $(document).ready(function () {
 
 //Script: header
 $(document).ready(function () {
-      $('#menu-toggle').click(function (e) {
+      $('.menu-toggle').click(function (e) {
         e.stopPropagation();
-        $('#nav-menu').toggleClass('active');
+        $('.nav').toggleClass('active');
         $(this).find('i').toggleClass('fa-bars fa-times');
       });
-      
-      $('#nav-menu a').click(function() {
-        $('#nav-menu').removeClass('active');
-        $('#menu-toggle i').removeClass('fa-times').addClass('fa-bars');
+
+      $('.nav a').click(function() {
+        $('.nav').removeClass('active');
+        $('.menu-toggle i').removeClass('fa-times').addClass('fa-bars');
       });
-      
+
       $(document).click(function() {
-        $('#nav-menu').removeClass('active');
-        $('#menu-toggle i').removeClass('fa-times').addClass('fa-bars');
+        $('.nav').removeClass('active');
+        $('.menu-toggle i').removeClass('fa-times').addClass('fa-bars');
       });
-      
-      $('#nav-menu').click(function(e) {
+
+      $('.nav').click(function(e) {
         e.stopPropagation();
       });
     });
